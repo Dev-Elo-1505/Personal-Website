@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar"
 
 const HomePage = () => {
   return (
-    <div className="flex justify-center items-center p-5"><NavBar /></div>
+    <div className="flex flex-col h-screen justify-end items-center p-5"><NavBar /></div>
   )
 }
 

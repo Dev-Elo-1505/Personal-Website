@@ -9,14 +9,14 @@ const navData = [
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-center py-4 px-5 w-fit bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20">
+    <nav className="flex justify-center py-4 px-5 w-fit bg-black/10 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-lg shadow-md sticky bottom-4">
       <ul className="flex space-x-4">
         {navData.map((navItem) => (
           <li key={navItem.id}>
             <NavLink
               to={navItem.href}
               className={({ isActive }) => {
-                return isActive ? "font-bold text-black" : "font-normal text-gray-400";
+                return isActive ? "font-bold" : "font-normal";
               }}
             >
               {navItem.name}
