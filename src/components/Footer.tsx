@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex items-center gap-2">
         Built with <FaReact /> React <IoLogoVercel /> Vercel
       </div>
-      <div className="text-[#665e5d] mt-3 md:mt-0 md:mb-0 mb-10">
+      <div className="text-[#665e5d] mt-3 md:mt-0 md:mb-0 mb-10 text-sm">
         Copyright &copy; Elo-oghene 2025 All Rights Reserved
       </div>
     </div>

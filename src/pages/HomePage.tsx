@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="p-5 bg-[#1f1f22] text-white">
+    <div className="p-5 bg-light text-black md:py-5 md:px-20 dark:bg-dark dark:text-white">
       <Hero />
       <About />
       <div className="flex flex-col h-screen justify-end items-center p-5">
