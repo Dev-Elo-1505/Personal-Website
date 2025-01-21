@@ -52,7 +52,7 @@ const Hero = () => {
           <img
             src={profilePic}
             alt="Profile photo"
-            className="w-full object-cover rounded-xl h-full"
+            className="w-full object-cover rounded-xl h-full hover:skew-y-6 transition-transform duration-500"
           />
         </div>
         <div className="rounded-xl ">
@@ -62,13 +62,19 @@ const Hero = () => {
             className="w-full h-full rounded-xl object-cover"
           />
         </div>
-        {socials.map((social) => (
-          <div key={social.id} className="flex justify-between items-center">
-            <a href={social.href}>
+        <div className="flex justify-between items-center gap-10 bg-black/5 backdrop-blur p-5 rounded-xl w-full">
+          {socials.map((social) => (
+            <a
+              key={social.id}
+              href={social.href}
+              target="_blank"
+              rel="noreferrer"
+              className="w-8 cursor-pointer hover:rotate-45 transition-transform duration-500"
+            >
               <img src={social.src} alt={social.name} />
             </a>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

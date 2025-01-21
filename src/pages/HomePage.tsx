@@ -8,13 +8,13 @@ const HomePage = () => {
   return (
     <div className="p-5 bg-light text-black md:py-5 md:px-20 dark:bg-dark dark:text-white">
       <Hero />
-      <About />
+      {/* <About />
       <div className="flex flex-col h-screen justify-end items-center p-5">
         <p>elo-oghene</p>
         <NavBar />
         <FaMoon />
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
