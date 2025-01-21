@@ -30,7 +30,13 @@ const Hero = () => {
   return (
     <section className="flex h-screen flex-col gap-10">
       <div>
-        {/* badge */}
+        <div className="w-fit bg-teal-100  rounded-full px-2 py-1 text-teal-500 font-semibold tracking-wide mb-3 flex items-center gap-2">
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span>
+          </span>
+          <p className="text-[10px] ">AVAILABLE FOR WORK</p>
+        </div>
         <div>
           <h1 className="text-3xl font-bold mb-5">
             <span>Hi, I'm Elo-oghene </span>
