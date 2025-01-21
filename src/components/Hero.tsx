@@ -1,9 +1,30 @@
 import profilePic from "../assets/about-pic.jpg";
 import quote from "../assets/quote.jpg";
-import linkedin from "../assets/linkedin.png"
-import twitter from "../assets/twitter.png"
-import github from "../assets/GitHub_Invertocat_Dark.svg"
-import leetcode from "../assets/leetcode.jpeg"
+import linkedin from "../assets/linkedin.png";
+import twitter from "../assets/twitter.png";
+import github from "../assets/GitHub_Invertocat_Dark.svg";
+import leetcode from "../assets/leetcode.jpeg";
+
+const socials = [
+  {
+    id: 1,
+    name: "LinkedIn",
+    src: linkedin,
+    href: "https://www.linkedin.com/in/addisijoy/",
+  },
+  {
+    id: 2,
+    name: "Twitter",
+    src: twitter,
+    href: "https://x.com/Elooghene__",
+  },
+  {
+    id: 3,
+    name: "Github",
+    src: github,
+    href: "https://github.com/Dev-Elo-1505",
+  },
+];
 
 const Hero = () => {
   return (
@@ -41,12 +62,13 @@ const Hero = () => {
             className="w-full h-full rounded-xl object-cover"
           />
         </div>
-        <div>
-          <a href="#"><img src={linkedin} alt="LinkedIn" /></a>
-          <a href="#"><img src={twitter} alt="" /></a>
-          <a href="#"><img src={github} alt="" /></a>
-          <a href="#"><img src={leetcode} alt="" /></a>
-        </div>
+        {socials.map((social) => (
+          <div key={social.id} className="flex justify-between items-center">
+            <a href={social.href}>
+              <img src={social.src} alt={social.name} />
+            </a>
+          </div>
+        ))}
       </div>
     </section>
   );
