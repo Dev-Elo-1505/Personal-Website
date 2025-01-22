@@ -3,11 +3,13 @@ import About from "../components/About";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import Tools from "../components/Tools";
 
 const HomePage = () => {
   return (
-    <div className="p-5 bg-light text-black md:py-8 md:px-20 dark:bg-dark dark:text-white">
+    <div className=" bg-light text-black dark:bg-dark dark:text-white">
       <Hero />
+      <Tools />
       {/* <About />
       <div className="flex flex-col h-screen justify-end items-center p-5">
         <p>elo-oghene</p>
