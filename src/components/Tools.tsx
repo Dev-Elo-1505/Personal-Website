@@ -49,12 +49,12 @@ const stacks = [
 
 const Tools = () => {
   return (
-    <div className="flex overflow-hidden bg-black">
-      <ul className="flex animate-infinite-scroll gap-10 bg-black py-4 text-white">
+    <div className="flex overflow-hidden bg-black/5 backdrop-blur">
+      <ul className="flex animate-infinite-scroll gap-10 bg-[#f5f5f5] py-4 text-white">
         {[...stacks, ...stacks].map((stack) => {
           return (
             <li key={stack.id} className="flex items-center gap-2">
-              <p className="text-gray-300">{stack.name}</p>
+              <p className="text-black">{stack.name}</p>
             </li>
           );
         })}
