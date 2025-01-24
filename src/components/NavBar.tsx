@@ -9,7 +9,7 @@ const navData = [
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-center py-4 px-5 w-fit bg-black/10 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-lg shadow-md sticky bottom-4">
+    <nav className="flex justify-center items-center px-6 py-3 w-fit bg-black/5 rounded-lg bg-clip-padding backdrop-filter backdrop-blur sticky top-4">
       <ul className="flex space-x-4">
         {navData.map((navItem) => (
           <li key={navItem.id}>

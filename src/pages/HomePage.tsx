@@ -8,12 +8,16 @@ import Tools from "../components/Tools";
 const HomePage = () => {
   return (
     <div className=" bg-light text-black dark:bg-dark dark:text-white">
+      <div className="flex justify-center items-center md:py-8 md:px-20 p-5">
+        <NavBar />
+      </div>
       <Hero />
       <Tools />
+
       {/* <About />
       <div className="flex flex-col h-screen justify-end items-center p-5">
         <p>elo-oghene</p>
-        <NavBar />
+        
         <FaMoon />
       </div>
       <Footer /> */}
