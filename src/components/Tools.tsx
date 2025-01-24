@@ -1,5 +1,8 @@
+import html from "../assets/html.png";
+import react from "../assets/react.svg";
+import js from "../assets/js.svg";
 const stacks = [
-  { id: 1, name: "React", src: "react" },
+  { id: 1, name: "React", src: react },
   {
     id: 2,
     name: "Next.js",
@@ -17,13 +20,13 @@ const stacks = [
   },
   {
     id: 5,
-    name: "Node.js",
-    src: "node",
+    name: "HTML",
+    src: html,
   },
   {
     id: 6,
-    name: "Express.js",
-    src: "express",
+    name: "JS",
+    src: js,
   },
   {
     id: 7,
@@ -50,15 +53,13 @@ const stacks = [
 const Tools = () => {
   return (
     <div className="flex overflow-hidden bg-black/5 backdrop-blur">
-      <ul className="flex animate-infinite-scroll gap-10 bg-[#f5f5f5] py-4 text-white">
-        {[...stacks, ...stacks].map((stack) => {
-          return (
-            <li key={stack.id} className="flex items-center gap-2">
-              <p className="text-black">{stack.name}</p>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="flex animate-infinite-scroll gap-10 bg-[#f5f5f5] py-4 text-black">
+        {[...stacks, ...stacks].map((stack) => (
+          <div key={stack.id} className="flex items-center gap-2">
+            <img src={stack.src} alt={stack.name} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
