@@ -8,7 +8,7 @@ import Tools from "../components/Tools";
 const HomePage = () => {
   return (
     <div className=" bg-light text-black dark:bg-dark dark:text-white">
-      <div className="flex justify-center items-center md:py-8 md:px-20 p-5">
+      <div className="flex justify-center items-center pt-5">
         <NavBar />
       </div>
       <Hero />

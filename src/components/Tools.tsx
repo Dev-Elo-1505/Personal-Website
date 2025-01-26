@@ -1,52 +1,35 @@
-import html from "../assets/html.png";
-import react from "../assets/react.svg";
-import js from "../assets/js.svg";
+import ReactOriginal from "devicons-react/lib/icons/ReactOriginal";
+import NextjsOriginalWordmark from "devicons-react/lib/icons/NextjsOriginalWordmark";
+import TailwindcssPlainWordmark from "devicons-react/lib/icons/TailwindcssPlainWordmark";
+import TypescriptPlain from "devicons-react/lib/icons/TypescriptPlain";
+import HTML5PlainWordmark from "devicons-react/lib/icons/Html5PlainWordmark";
+import JavascriptPlain from "devicons-react/lib/icons/JavascriptPlain";
 const stacks = [
-  { id: 1, name: "React", src: react },
+  { id: 1, name: "React", src: <ReactOriginal size={50} /> },
   {
     id: 2,
     name: "Next.js",
-    src: "next",
+    src: <NextjsOriginalWordmark size={50} />,
   },
   {
     id: 3,
     name: "TailwindCSS",
-    src: "tailwind",
+    src: <TailwindcssPlainWordmark size={100} />,
   },
   {
     id: 4,
     name: "Typescript",
-    src: "typescript",
+    src: <TypescriptPlain size={50} />,
   },
   {
     id: 5,
     name: "HTML",
-    src: html,
+    src: <HTML5PlainWordmark size={50} />,
   },
   {
     id: 6,
     name: "JS",
-    src: js,
-  },
-  {
-    id: 7,
-    name: "MongoDB",
-    src: "mongo",
-  },
-  {
-    id: 8,
-    name: "PostgreSQL",
-    src: "postgres",
-  },
-  {
-    id: 9,
-    name: "GraphQL",
-    src: "graphql",
-  },
-  {
-    id: 10,
-    name: "Apollo",
-    src: "apollo",
+    src: <JavascriptPlain size={50} />,
   },
 ];
 
@@ -55,8 +38,8 @@ const Tools = () => {
     <div className="flex overflow-hidden bg-black/5 backdrop-blur">
       <div className="flex animate-infinite-scroll gap-10 bg-[#f5f5f5] py-4 text-black">
         {[...stacks, ...stacks].map((stack) => (
-          <div key={stack.id} className="flex items-center gap-2">
-            <img src={stack.src} alt={stack.name} />
+          <div key={stack.id} className="flex items-center gap-10 text-4xl">
+            {stack.src}
           </div>
         ))}
       </div>
