@@ -13,7 +13,7 @@ const HomePage = () => {
       </div>
       <Hero />
       <Tools />
-
+      <About />
       {/* <About />
       <div className="flex flex-col h-screen justify-end items-center p-5">
         <p>elo-oghene</p>
