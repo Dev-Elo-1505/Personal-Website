@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Tools from "../components/Tools";
+import Projects from "../components/Projects";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,8 @@ const HomePage = () => {
       <Hero />
       <Tools />
       <About />
+      <Projects />
+      <Footer />
       {/* <About />
       <div className="flex flex-col h-screen justify-end items-center p-5">
         <p>elo-oghene</p>
