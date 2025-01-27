@@ -4,6 +4,7 @@ import TailwindcssPlainWordmark from "devicons-react/lib/icons/TailwindcssPlainW
 import TypescriptPlain from "devicons-react/lib/icons/TypescriptPlain";
 import HTML5PlainWordmark from "devicons-react/lib/icons/Html5PlainWordmark";
 import JavascriptPlain from "devicons-react/lib/icons/JavascriptPlain";
+import Css3Plain from "devicons-react/lib/icons/Css3PlainWordmark";
 const stacks = [
   { id: 1, name: "React", src: <ReactOriginal size={50} /> },
   {
@@ -30,6 +31,11 @@ const stacks = [
     id: 6,
     name: "JS",
     src: <JavascriptPlain size={50} />,
+  },
+  {
+    id: 7,
+    name: "CSS",
+    src: <Css3Plain size={50} />,
   },
 ];
 
