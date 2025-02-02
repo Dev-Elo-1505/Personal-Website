@@ -3,7 +3,7 @@ import quote from "../assets/quote.jpg";
 import linkedin from "../assets/linkedin.png";
 import twitter from "../assets/twitter.png";
 import github from "../assets/GitHub_Invertocat_Dark.svg";
-import leetcode from "../assets/leetcode.jpeg";
+
 
 const socials = [
   {
