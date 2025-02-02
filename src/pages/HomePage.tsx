@@ -1,4 +1,4 @@
-import { FaMoon } from "react-icons/fa";
+
 import About from "../components/About";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
