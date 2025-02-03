@@ -66,6 +66,7 @@ const Hero = () => {
             src={quote}
             alt="My favourite quote about excellence."
             className="w-full h-full rounded-xl object-cover"
+            title="Love this, hope you do too."
           />
         </div>
         <div className="flex justify-between items-center gap-10 bg-black/5 backdrop-blur p-5 rounded-xl w-full lg:col-span-2">
