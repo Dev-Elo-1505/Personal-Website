@@ -3,23 +3,29 @@ import quote from "../assets/quote.jpg";
 import linkedin from "../assets/linkedin.png";
 import twitter from "../assets/twitter.png";
 import github from "../assets/GitHub_Invertocat_Dark.svg";
-
+import gmail from "../assets/gmail.png";
 
 const socials = [
   {
     id: 1,
+    name: "Gmail",
+    src: gmail,
+    href: "mailto:elooghenejoy@gmail.com",
+  },
+  {
+    id: 2,
     name: "LinkedIn",
     src: linkedin,
     href: "https://www.linkedin.com/in/addisijoy/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Twitter",
     src: twitter,
     href: "https://x.com/Elooghene__",
   },
   {
-    id: 3,
+    id: 4,
     name: "Github",
     src: github,
     href: "https://github.com/Dev-Elo-1505",
