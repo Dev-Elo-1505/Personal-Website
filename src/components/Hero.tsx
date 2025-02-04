@@ -54,7 +54,7 @@ const Hero = () => {
           </p>
         </div>
         <div>
-          <button className="bg-dark text-white rounded-full px-5 py-2">
+          <button className="bg-dark text-white rounded-full px-5 py-2 hover:brightness-95 active:scale-95 transition-transform duration-500">
             Download Resume
           </button>
         </div>
