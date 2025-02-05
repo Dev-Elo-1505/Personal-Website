@@ -9,9 +9,9 @@ import Projects from "../components/Projects";
 const HomePage = () => {
   return (
     <div className=" bg-light text-black dark:bg-dark dark:text-white">
-      <div className="flex justify-center items-center pt-5">
+      
         <NavBar />
-      </div>
+      
       <Hero />
       <Tools />
       <About />
