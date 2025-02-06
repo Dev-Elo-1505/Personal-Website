@@ -1,8 +1,8 @@
-import linkedin from "../assets/linkedin.png";
-import twitter from "../assets/twitter.png";
-import github from "../assets/GitHub_Invertocat_Dark.svg";
-import gmail from "../assets/gmail.png";
-import todo from "../assets/todo.png";
+import linkedin from "./assets/linkedin.png";
+import twitter from "./assets/twitter.png";
+import github from "./assets/GitHub_Invertocat_Dark.svg";
+import gmail from "./assets/gmail.png";
+import todo from "./assets/todo.png";
 
 export const navData = [
   { id: 1, name: "Home", href: "/" },
