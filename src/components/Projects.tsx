@@ -1,31 +1,4 @@
-import todo from "../assets/todo.png";
-
-const projects = [
-  {
-    id: 1,
-    name: "Todo",
-    description: "Todo App ",
-    repolink: "https://github.com",
-    livelink: "www.google.com",
-    src: todo,
-  },
-  {
-    id: 2,
-    name: "Project 2",
-    description: "Description 2",
-    repolink: "https://github.com",
-    livelink: "www.google.com",
-    src: "https://via.placeholder.com/150",
-  },
-  {
-    id: 3,
-    name: "Project 3",
-    description: "Description 1",
-    repolink: "https://github.com",
-    livelink: "www.google.com",
-    src: "https://via.placeholder.com/150",
-  },
-];
+import { projects } from "../data";
 
 const Projects = () => {
   return (
@@ -37,7 +10,11 @@ const Projects = () => {
         {projects.map((project) => (
           <div className="w-60 bg-black/5 backdrop-blur rounded-xl p-5 flex flex-col justify-center">
             <div className="rounded-xl overflow-hidden">
-              <img src={project.src} alt="" className="w-full object-contain rounded-sm" />
+              <img
+                src={project.src}
+                alt=""
+                className="w-full object-contain rounded-sm"
+              />
             </div>
             <div className="mt-3">
               <h2 className="font-semibold">{project.name}</h2>
