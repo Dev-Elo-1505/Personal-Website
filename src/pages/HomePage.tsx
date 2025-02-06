@@ -1,4 +1,3 @@
-
 import About from "../components/About";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
@@ -9,9 +8,7 @@ import Projects from "../components/Projects";
 const HomePage = () => {
   return (
     <div className=" bg-light text-black dark:bg-dark dark:text-white">
-      
-        <NavBar />
-      
+      <NavBar />
       <Hero />
       <Tools />
       <About />
