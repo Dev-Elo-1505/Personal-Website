@@ -1,42 +1,4 @@
-import html from "../assets/html.svg"
-import css from "../assets/css.svg"
-import js from "../assets/js.svg"
-import react from "../assets/react.svg"
-import nextjs from "../assets/nextjs.svg"
-import tailwind from "../assets/tailwind.svg"
-const stacks = [
-  {
-    id: 1,
-    src: html,
-    name: "HTML"
-  },
-  {
-    id: 2,
-    src: css,
-    name: "CSS"
-  },
-  {
-    id: 3,
-    src: js,
-    name: "JavaScript"
-  },
-  {
-    id: 4,
-    src: react,
-    name: "ReactJs"
-  },
-  {
-    id: 5,
-    src: nextjs,
-    name: "NextJs"
-  },
-  {
-    id: 6,
-    src: tailwind,
-    name: "TailwindCss"
-  },
-  
-];
+import { stacks } from "../data"
 
 const Tools = () => {
   return (
