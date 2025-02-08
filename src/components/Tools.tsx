@@ -9,7 +9,7 @@ const duplicatedStacks = [...stacks, ...stacks]
     <div className="overflow-hidden  flex bg-black/5 backdrop-blur MyGradient w-full">
       <motion.div
         initial={{ x: 0 }}
-        animate={{ x: "-100%" }}
+        animate={{ x: "-50%" }}
         transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
         className="flex gap-20 items-center justify-center p-5"
       >

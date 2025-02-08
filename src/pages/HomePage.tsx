@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 
 const HomePage = () => {
   return (
-    <div className=" bg-light text-black dark:bg-dark dark:text-white flex flex-col gap-5">
+    <div className=" bg-light text-black dark:bg-dark dark:text-white">
       <NavBar />
       <Hero />
       <Tools />
