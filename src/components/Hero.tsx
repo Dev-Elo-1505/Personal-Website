@@ -6,7 +6,7 @@ import { socials } from "../data";
 
 const Hero = () => {
   return (
-    <section className="flex h-screen flex-col lg:flex-row lg:justify-between lg:flex-center gap-10 md:px-20 p-5">
+    <section className="flex min-h-screen flex-col lg:flex-row lg:justify-between lg:flex-center gap-10 md:px-20 p-5">
       <div className="flex flex-col gap-3 justify-center">
         <div className="w-fit bg-teal-100  rounded-full px-2 py-1 text-teal-500 font-semibold tracking-wide mb-3 flex items-center gap-2">
           <span className="relative flex h-3 w-3">
