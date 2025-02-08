@@ -2,13 +2,13 @@ import { projects } from "../data";
 
 const Projects = () => {
   return (
-    <section className="p-5 md:px-20 h-screen md:pt-10">
+    <section className="p-5 md:px-20 min-h-screen md:pt-10">
       <div className="text-2xl text-black/40 underline-offset-2">
         P R O J E C T S
       </div>
       <main className="mt-5 grid grid-cols-1 lg:grid-cols-3 gap-5 place-items-center">
         {projects.map((project) => (
-          <div className="w-60 bg-black/5 backdrop-blur rounded-xl p-5 flex flex-col justify-center">
+          <div className="w-72 bg-black/5 backdrop-blur rounded-xl p-5 flex flex-col justify-center">
             <div className="rounded-xl overflow-hidden">
               <img
                 src={project.src}

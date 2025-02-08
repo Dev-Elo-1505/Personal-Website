@@ -2,17 +2,17 @@ import profilepic from "../assets/profilepic.jpeg";
 
 const About = () => {
   return (
-    <section className="p-5 md:px-20 h-screen md:pt-10">
-      <div className="text-2xl text-black/40 underline-offset-2">A B O U T</div>
+    <section className="p-5 md:px-20 min-h-screen md:pt-10">
+      <div className="text-2xl text-black/40 mb-5">A B O U T</div>
       <main className="flex flex-col lg:justify-between lg:flex-center gap-5 items-center lg:flex-row-reverse">
-        <div className="w-80">
+        <div className="w-72">
           <img
             src={profilepic}
             alt=""
             className="w-full object-cover rounded-xl"
           />
         </div>
-        <div className="w-1/2 text-justify space-y-4">
+        <div className="lg:w-1/2 text-justify space-y-4">
           <h2 className="text-3xl">
             I'm Elo-oghene. I live in Lagos, where I build the future.
           </h2>
