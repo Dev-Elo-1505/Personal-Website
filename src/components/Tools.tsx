@@ -1,16 +1,26 @@
-import { stacks } from "../data"
+import { stacks } from "../data";
+import { motion } from "motion/react";
 
 const Tools = () => {
   return (
-    <div className="flex h-20 w-full overflow-hidden bg-black/5 backdrop-blur">
-      <div className="flex animate-infinite-scroll gap-10 bg-[#f5f5f5] py-4 text-black">
-        {[...stacks, ...stacks].map((stack) => (
-          <div key={stack.id} className="flex items-center gap-10 text-4xl">
-            <img src={stack.src} alt={stack.name} />
-          </div>
+    <div className="bg-black/5 backdrop-blur">
+      <motion.div
+        initial={{ x: 0 }}
+        animate={{ x: "-100%" }}
+        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+        className="flex gap-20 items-center justify-center p-5"
+      >
+        {stacks.map((stack) => (
+          <img
+            src={stack.src}
+            alt={stack.name}
+            width="50px"
+            title={stack.name}
+          />
         ))}
-      </div>
+      </motion.div>
     </div>
+    
   );
 };
 
