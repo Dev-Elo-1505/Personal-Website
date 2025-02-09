@@ -1,3 +1,5 @@
+import SocialBar from "./SocialBar";
+
 const Contact = () => {
   return (
     <section className="p-5 md:px-20 min-h-screen md:pt-10">
@@ -7,10 +9,11 @@ const Contact = () => {
           <p className="text-3xl font-bold mb-3 md:text-4xl lg:text-5xl">
             LET'S CHAT✨
           </p>
-          <p className="text-gray-400">
+          <p className="text-gray-400 mb-5 lg:mb-10">
             I enjoy working with dedicated engineers and creatives from
             businesses to build quality softwares that people need.
           </p>
+          <SocialBar />
         </div>
         <div className="lg:w-1/2 w-full p-5 rounded-xl shadow-md">
           <form className="flex flex-col gap-5">
@@ -34,6 +37,7 @@ const Contact = () => {
            className="bg-dark text-white rounded-lg p-3 hover:brightness-95 active:scale-95 transition-transform duration-500">Send Message</button>
             </div>
           </form>
+          
         </div>
       </main>
     </section>
