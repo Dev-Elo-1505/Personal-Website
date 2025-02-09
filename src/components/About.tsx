@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="p-5 md:px-20 min-h-screen md:pt-10">
       <div className="text-2xl text-black/40 mb-5">A B O U T</div>
-      <main className="flex flex-col lg:justify-between lg:flex-center gap-5 items-center lg:flex-row-reverse">
+      <main className="flex flex-col lg:justify-between gap-5 items-center lg:flex-row-reverse">
         <div className="w-72">
           <img
             src={profilepic}

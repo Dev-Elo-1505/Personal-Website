@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Tools from "../components/Tools";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Tools />
       <About />
       <Projects />
+      <Contact />
       <Footer />
       {/* <About />
       <div className="flex flex-col h-screen justify-end items-center p-5">
