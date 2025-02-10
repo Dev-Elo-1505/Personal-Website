@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+
 import { navData } from "../data";
 
 const NavBar = () => {

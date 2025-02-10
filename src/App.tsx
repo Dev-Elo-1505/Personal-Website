@@ -1,21 +1,26 @@
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
+import Tools from "./components/Tools";
 import "./index.css";
-import { BrowserRouter, Routes, Route } from "react-router";
-import Home from "./pages/HomePage";
-import NoPage from "./pages/NoPage";
-import AboutPage from "./pages/AboutPage";
-import ProjectPage from "./pages/ProjectPage";
+
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/project" element={<ProjectPage />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </BrowserRouter>{" "}
+      <div className=" bg-light text-black dark:bg-dark dark:text-white">
+      <NavBar />
+      <Hero />
+      <Tools />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+      
+    </div>
     </>
   );
 }
