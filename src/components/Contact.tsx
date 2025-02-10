@@ -1,4 +1,5 @@
 import SocialBar from "./SocialBar";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   return (
