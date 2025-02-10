@@ -2,7 +2,7 @@ import { projects } from "../data";
 
 const Projects = () => {
   return (
-    <section className="p-5 md:px-20 min-h-screen md:pt-10">
+    <section className="p-5 md:px-20 min-h-screen md:pt-10" id="project">
       <div className="text-2xl text-black/40 underline-offset-2">
         P R O J E C T S
       </div>

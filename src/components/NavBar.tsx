@@ -8,14 +8,12 @@ const NavBar = () => {
         <ul className="flex space-x-4">
           {navData.map((navItem) => (
             <li key={navItem.id}>
-              <NavLink
-                to={navItem.href}
-                className={({ isActive }) => {
-                  return isActive ? "font-bold" : "font-normal";
-                }}
+              <a
+              href={navItem.href}
+                className="text-dark hover:text-gray-400 transition-colors"
               >
                 {navItem.name}
-              </NavLink>
+              </a>
             </li>
           ))}
         </ul>
