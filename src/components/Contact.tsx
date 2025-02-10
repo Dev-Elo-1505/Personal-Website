@@ -7,10 +7,12 @@ const templateId = import.meta.env.VITE_TEMPLATE_ID
 const publicKey = import.meta.env.VITE_PUBLIC_KEY
 
 const Contact = () => {
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!form.current) return;
 
     emailjs
       .sendForm(serviceId, templateId, form.current, {
