@@ -20,8 +20,8 @@ const Projects = () => {
               <h2 className="font-semibold">{project.name}</h2>
               <p className="mt-3 mb-3">{project.description}</p>
               <div className="flex justify-between items-center">
-                <a href={project.repolink}>Repo</a>
-                <a href={project.livelink}>Live</a>
+                <a href={project.repolink} target="_blank">Repo</a>
+                <a href={project.livelink} target="_blank">Live</a>
               </div>
             </div>
           </div>

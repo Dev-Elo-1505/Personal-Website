@@ -106,8 +106,8 @@ export const projects = [
     id: 1,
     name: "Todo",
     description: "Todo App ",
-    repolink: "https://github.com",
-    livelink: "www.google.com",
+    repolink: "https://github.com/Dev-Elo-1505/Todo-app.git",
+    livelink: "https://todo-app-eight-zeta-90.vercel.app/",
     src: todo,
   },
   {
