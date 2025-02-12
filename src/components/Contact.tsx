@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="p-5 md:px-20 min-h-screen md:pt-10 snap-center" id="contact">
+    <section className="p-5 md:px-20 min-h-screen md:pt-10" id="contact">
       <div className="text-2xl text-black/40 mb-5">C O N T A C T</div>
       <main className="flex flex-col lg:justify-between lg:flex-row gap-5 items-center">
         <div className="w-72">
