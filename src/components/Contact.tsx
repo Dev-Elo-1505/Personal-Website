@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import SocialBar from "./SocialBar";
 import emailjs from "@emailjs/browser";
 
@@ -8,9 +8,12 @@ const publicKey = import.meta.env.VITE_PUBLIC_KEY
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false)
 
+  
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(false)
 
     if (!form.current) return;
 
@@ -21,6 +24,7 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setLoading(true)
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -72,7 +76,7 @@ const Contact = () => {
             </div>
             <div>
               <button className="bg-dark text-white rounded-lg p-3 hover:brightness-95 active:scale-95 transition-transform duration-500" type="submit">
-                Send Message
+                {loading ? "Loading..." : "Send Message"}
               </button>
             </div>
           </form>
