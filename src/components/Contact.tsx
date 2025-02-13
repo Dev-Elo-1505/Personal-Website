@@ -9,6 +9,7 @@ const publicKey = import.meta.env.VITE_PUBLIC_KEY
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
 
   
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -27,7 +28,8 @@ const Contact = () => {
           setLoading(true)
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log(error.text)
+          setError(true)
         }
       );
   };
@@ -79,6 +81,7 @@ const Contact = () => {
                 {loading ? "Loading..." : "Send Message"}
               </button>
             </div>
+            {error && <p className="text-red-500">Error sending form</p>}
           </form>
         </div>
       </main>
