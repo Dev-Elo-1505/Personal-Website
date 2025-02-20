@@ -9,6 +9,7 @@ const publicKey = import.meta.env.VITE_PUBLIC_KEY
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -27,6 +28,7 @@ const Contact = () => {
       .then(
         () => {
           notify();
+          setFormData({ name: "", email: "", message: "" });
           setLoading(false)
         },
         (error) => {
@@ -58,6 +60,8 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Full name*"
+                value={formData.name}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full bg-black/5 backdrop-blur p-2 rounded-md focus:outline-none focus:border focus:border-gray-400"
               />
             </div>
@@ -65,6 +69,8 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="Email address*"
+                value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full bg-black/5 backdrop-blur p-2 rounded-md focus:outline-none focus:border focus:border-gray-400"
               />
             </div>
@@ -75,6 +81,8 @@ const Contact = () => {
               <textarea
                 name="message"
                 id="message"
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={4}
                 className="w-full bg-black/5 backdrop-blur p-2 rounded-md focus:outline-none focus:border focus:border-gray-400"
               ></textarea>
