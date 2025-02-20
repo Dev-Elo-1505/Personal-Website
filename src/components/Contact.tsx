@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import SocialBar from "./SocialBar";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
 
 const serviceId = import.meta.env.VITE_SERVICE_ID
 const templateId = import.meta.env.VITE_TEMPLATE_ID
@@ -11,6 +12,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
+  const notify = () => toast("Message sent successfully!☺️");
   
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -24,7 +26,7 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          notify();
           setLoading(false)
         },
         (error) => {
@@ -35,6 +37,7 @@ const Contact = () => {
   };
 
   return (
+    
     <section className="p-5 md:px-20 min-h-screen md:pt-10" id="contact">
       <div className="text-2xl text-black/40 mb-5">C O N T A C T</div>
       <main className="flex flex-col lg:justify-between lg:flex-row gap-5 items-center">
@@ -84,6 +87,7 @@ const Contact = () => {
             {error && <p className="text-red-500">Error sending form</p>}
           </form>
         </div>
+        <ToastContainer />
       </main>
     </section>
   );
