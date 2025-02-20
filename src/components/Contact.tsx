@@ -14,7 +14,7 @@ const Contact = () => {
   
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(false)
+    setLoading(true)
 
     if (!form.current) return;
 
@@ -25,7 +25,7 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          setLoading(true)
+          setLoading(false)
         },
         (error) => {
           console.log(error.text)
