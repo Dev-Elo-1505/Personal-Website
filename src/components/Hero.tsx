@@ -1,12 +1,14 @@
 import profilePic from "../assets/about-pic.jpg";
 import quote from "../assets/quote.jpg";
 import SocialBar from "./SocialBar";
-
-
+import resume from "../document/resume.pdf";
 
 const Hero = () => {
   return (
-    <section className="flex min-h-screen flex-col lg:flex-row lg:justify-between lg:items-center gap-10 md:px-20 p-5" id="home">
+    <section
+      className="flex min-h-screen flex-col lg:flex-row lg:justify-between lg:items-center gap-10 md:px-20 p-5"
+      id="home"
+    >
       <div className="flex flex-col gap-3 justify-center">
         <div className="w-fit bg-teal-100  rounded-full px-2 py-1 text-teal-500 font-semibold tracking-wide mb-3 flex items-center gap-2">
           <span className="relative flex h-3 w-3">
@@ -26,9 +28,11 @@ const Hero = () => {
           </p>
         </div>
         <div>
+        <a href={resume} target="_blank" rel="noreferrer">
           <button className="bg-dark text-white rounded-full px-5 py-2 hover:brightness-95 active:scale-95 transition-transform duration-500">
             Download Resume
           </button>
+          </a>
         </div>
       </div>
       <div className="grid place-content-center gap-5 lg:w-1/2 lg:grid-cols-2 lg:gap-3 lg:h-full">
