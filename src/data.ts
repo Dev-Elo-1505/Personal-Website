@@ -12,6 +12,8 @@ import firebase from "./assets/firebase.svg"
 import prisma from "./assets/prisma.svg"
 import mysql from "./assets/mysql.svg"
 import todo from "./assets/todo.png";
+import squaay from "./assets/squaaypro.png"
+import cineo from "./assets/cineopro.png"
 
 
 export const navData = [
@@ -104,26 +106,26 @@ export const stacks = [
 export const projects = [
   {
     id: 1,
-    name: "Todo",
-    description: "Todo App ",
+    name: "TODO",
+    description: "TODO is a functional to-do list app",
     repolink: "https://github.com/Dev-Elo-1505/Todo-app.git",
     livelink: "https://todo-app-eight-zeta-90.vercel.app/",
     src: todo,
   },
   {
     id: 2,
-    name: "Project 2",
-    description: "Description 2",
-    repolink: "https://github.com",
-    livelink: "www.google.com",
-    src: "https://via.placeholder.com/150",
+    name: "Squaay",
+    description: "Website for a social food market place",
+    repolink: "nil",
+    livelink: "https://www.squaay.com/",
+    src: squaay,
   },
   {
     id: 3,
-    name: "Project 3",
-    description: "Description 1",
-    repolink: "https://github.com",
-    livelink: "www.google.com",
-    src: "https://via.placeholder.com/150",
+    name: "Cineo",
+    description: "Cineo is a movie webapp with filter and search functionality",
+    repolink: "https://github.com/Dev-Elo-1505/Cineo---Movie-Recommendation-WebApp",
+    livelink: "nil",
+    src: cineo,
   },
 ];
