@@ -13,26 +13,18 @@ const About = () => {
           />
         </div>
         <div className="lg:w-1/2 text-justify space-y-4">
-          <h2 className="text-3xl">
-            I'm Elo-oghene. I live in Lagos, where I build the future.
-          </h2>
+          
           <p>
-            I am a self-driven, career-oriented software engineer specializing
-            in front-end development and open-source, currently pursuing a
-            bachelors degree in computer science. My expertise lies in building
-            interactive web applications on the client side. Primarily working
-            with technologies like JavaScript, Next.js, TypeScript and Python.
+            Hello, I'm Elo-oghene, a Frontend Software Engineer and Computer Engineering student. I care deeply about the positive impact of AI and software engineering on the world, and I'm passionate about building clean, functional, and human-centered digital experiences.
           </p>
           <p>
-            I strongly believe in continuous learning and improving myself, so I
-            try my best to learn in any situation possible, unfavorable or not.
+            I primarily work with JavaScript, TypeScript, React, and Next.js, and I'm always expanding my toolkit. One of my core values is continuous learning, so I do my best to grow through every experience, whether it’s favorable or challenging.
           </p>
           <p>
-            I’m currently on the lookout for exciting challenges and internship
-            opportunities where I can apply my skills, learn from industry
-            experts, and contribute to impactful projects.
+            I'm currently seeking frontend-focused internships and other exciting opportunities where I can join a team of innovative builders and contribute to real-world projects.
           </p>
-          <p>Let’s connect, share ideas, and build the future together!</p>
+          <p>Asides coding, you’ll often find me watching lighthearted, non-dark series or reading soulful essays on Substack.</p>
+          <p>Feel free to reach out!</p>
         </div>
       </main>
     </section>

@@ -14,6 +14,10 @@ import mysql from "./assets/mysql.svg"
 import todo from "./assets/todo.png";
 import squaay from "./assets/squaaypro.png"
 import cineo from "./assets/cineopro.png"
+import twae from "./assets/twae.png"
+import lead from "./assets/lead.png";
+import recipeep from "./assets/recipeep.png";
+import cgpa from "./assets/cgpa.png";
 
 
 export const navData = [
@@ -106,26 +110,54 @@ export const stacks = [
 export const projects = [
   {
     id: 1,
+    name: "Cineo",
+    description: "Cineo is a personalized Movie Web app with filter feature built with NextJs and Typescript. It allows users to search for movies, view details, and filter. Powered by TMDB API.",
+    repolink: "https://github.com/Dev-Elo-1505/Cineo---Movie-Recommendation-WebApp",
+    src: cineo,
+  },
+  {
+    id: 2,
+    name: "The World According to Elo (TWAE)",
+    description: "TWAE is a personal blog website where I will share my random thoughts and views on anything I find cool. It is built with ReactJs, Typescript, and TailwindCss and uses Firebase for backend services.",
+    repolink: "https://github.com/Dev-Elo-1505/My-Blog-Site",
+    livelink: "https://eloblog.vercel.app/",
+    src: twae,
+  },
+  {
+    id: 3,
+    name: "Squaay",
+    description: "Built the landing page for Squaay, a social food marketplace startup using ReactJs and TailwindCSS",
+    livelink: "https://www.squaay.com/",
+    src: squaay,
+  },
+  {
+    id: 4,
+    name: "Lead Tracker",
+    description: "Lead Tracker is a lightweight chrome extension tool that allows users to gather and save leads by saving tab links. Built HTML, CSS, and JavaScript.",
+    repolink: "https://github.com/Dev-Elo-1505/Lead-Tracker",
+    src: lead,
+  },
+  {
+    id: 5,
+    name: "Recipeep",
+    description: "Recipeep is a recipe app that allows users to search for recipes, view details, and watch related youtube videos. Built with ReactJs, Typescript, and TailwindCss. Powered by TheMealDB API.",
+    repolink: "https://github.com/Dev-Elo-1505/recipeep",
+    src: recipeep,
+  },
+  {
+    id: 6,
     name: "TODO",
-    description: "TODO is a functional to-do list app",
+    description: "TODO is a todo application built with HTML, CSS and Javascript. It allows users to view, add and delete items on a todo list. It also has a light and dark theme to improve accessibility, readability and user experience",
     repolink: "https://github.com/Dev-Elo-1505/Todo-app.git",
     livelink: "https://todo-app-eight-zeta-90.vercel.app/",
     src: todo,
   },
   {
-    id: 2,
-    name: "Squaay",
-    description: "Website for a social food market place",
-    repolink: "nil",
-    livelink: "https://www.squaay.com/",
-    src: squaay,
-  },
-  {
-    id: 3,
-    name: "Cineo",
-    description: "Cineo is a movie webapp with filter and search functionality",
-    repolink: "https://github.com/Dev-Elo-1505/Cineo---Movie-Recommendation-WebApp",
-    livelink: "nil",
-    src: cineo,
+    id: 7,
+    name: "5 point CGPA Calculator",
+    description: "It helps students calculate their CGPA based on their courses, grades, and units. Built using ReactJs, Typescript, and Vanilla CSS.",
+    repolink: "https://github.com/Dev-Elo-1505/cgpa-calculator",
+    livelink: "https://cgpa-calculator-black.vercel.app/",
+    src: cgpa,
   },
 ];

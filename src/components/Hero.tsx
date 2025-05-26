@@ -24,7 +24,7 @@ const Hero = () => {
             <span>Frontend Engineer</span>
           </h1>
           <p className="text-sm text-gray-400 mb-5">
-            I build stunning and user-centric interfaces.
+            I build functional UIs and problem solving softwares that people need.
           </p>
         </div>
         <div>
