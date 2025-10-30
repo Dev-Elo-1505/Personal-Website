@@ -8,7 +8,7 @@ const Footer = () => {
         Built with <img src={react} width="20px" /> React <img src={tailwind} width="20px" /> Tailwind
       </div>
       <div className="text-[#665e5d] mt-3 md:mt-0 md:mb-0 mb-10 text-sm">
-        Copyright &copy; Elo-oghene 2025 All Rights Reserved
+        Copyright &copy; Elo-oghene {new Date().getFullYear()} All Rights Reserved
       </div>
     </div>
   );

@@ -8,17 +8,18 @@ import js from "./assets/js.svg";
 import react from "./assets/react.svg";
 import nextjs from "./assets/nextjs.svg";
 import tailwind from "./assets/tailwind.svg";
-import firebase from "./assets/firebase.svg"
-import prisma from "./assets/prisma.svg"
-import mysql from "./assets/mysql.svg"
+import firebase from "./assets/firebase.svg";
+import prisma from "./assets/prisma.svg";
+import mysql from "./assets/mysql.svg";
 import todo from "./assets/todo.png";
-import squaay from "./assets/squaaypro.png"
-import cineo from "./assets/cineopro.png"
-import twae from "./assets/twae.png"
+import squaay from "./assets/squaaypro.png";
+import cineo from "./assets/cineopro.png";
+import twae from "./assets/twae.png";
 import lead from "./assets/lead.png";
 import recipeep from "./assets/recipeep.png";
 import cgpa from "./assets/cgpa.png";
-
+import ticklo from "./assets/ticklo.png";
+import trackit from "./assets/trackit-pic.png";
 
 export const navData = [
   { id: 1, name: "Home", href: "#home" },
@@ -109,53 +110,80 @@ export const stacks = [
 
 export const projects = [
   {
-    id: 1,
+ 
+    name: "Ticklo",
+    description:
+      "Ticklo is a multi-framework full stack ticket management web application that allows users to create, manage, and track tickets. Built across ReactJs, VueJs, and Twig/Php. Each framework is a separate implemention of the same features and functionalities.",
+    repolink: "https://github.com/Dev-Elo-1505/React-Ticklo",
+    livelink: "https://react-ticklo.vercel.app/",
+    src: ticklo,
+  },
+  {
+   
+    name: "trackit",
+    description:
+      "trackit is a habit tracking web application that allows users to create, manage, and track their daily habits. Built with ReactJs, Typescript, TailwindCss, and Firebase for backend services.",
+      repolink: "https://github.com/Dev-Elo-1505/trackit",
+      livelink: "https://trackit-seven-neon.vercel.app/",
+      src: trackit,
+  },
+
+  {
+   
     name: "Cineo",
-    description: "Cineo is a personalized Movie Web app with filter feature built with NextJs and Typescript. It allows users to search for movies, view details, and filter. Powered by TMDB API.",
-    repolink: "https://github.com/Dev-Elo-1505/Cineo---Movie-Recommendation-WebApp",
+    description:
+      "Cineo is a personalized Movie Web app with filter feature built with NextJs and Typescript. It allows users to search for movies, view details, and filter. Powered by TMDB API.",
+    repolink:
+      "https://github.com/Dev-Elo-1505/Cineo---Movie-Recommendation-WebApp",
     src: cineo,
   },
   {
-    id: 2,
+  
     name: "The World According to Elo (TWAE)",
-    description: "TWAE is a personal blog website where I will share my random thoughts and views on anything I find cool. It is built with ReactJs, Typescript, and TailwindCss and uses Firebase for backend services.",
+    description:
+      "TWAE is a personal blog website where I will share my random thoughts and views on anything I find cool. It is built with ReactJs, Typescript, and TailwindCss and uses Firebase for backend services.",
     repolink: "https://github.com/Dev-Elo-1505/My-Blog-Site",
     livelink: "https://eloblog.vercel.app/",
     src: twae,
   },
   {
-    id: 3,
+   
     name: "Squaay",
-    description: "Built the landing page for Squaay, a social food marketplace startup using ReactJs and TailwindCSS",
+    description:
+      "Built the landing page for Squaay, a social food marketplace startup using ReactJs and TailwindCSS",
     livelink: "https://www.squaay.com/",
     src: squaay,
   },
   {
-    id: 4,
+   
     name: "Lead Tracker",
-    description: "Lead Tracker is a lightweight chrome extension tool that allows users to gather and save leads by saving tab links. Built HTML, CSS, and JavaScript.",
+    description:
+      "Lead Tracker is a lightweight chrome extension tool that allows users to gather and save leads by saving tab links. Built HTML, CSS, and JavaScript.",
     repolink: "https://github.com/Dev-Elo-1505/Lead-Tracker",
     src: lead,
   },
   {
-    id: 5,
+   
     name: "Recipeep",
-    description: "Recipeep is a recipe app that allows users to search for recipes, view details, and watch related youtube videos. Built with ReactJs, Typescript, and TailwindCss. Powered by TheMealDB API.",
+    description:
+      "Recipeep is a recipe app that allows users to search for recipes, view details, and watch related youtube videos. Built with ReactJs, Typescript, and TailwindCss. Powered by TheMealDB API.",
     repolink: "https://github.com/Dev-Elo-1505/recipeep",
     src: recipeep,
   },
   {
-    id: 6,
+  
     name: "TODO",
-    description: "TODO is a todo application built with HTML, CSS and Javascript. It allows users to view, add and delete items on a todo list. It also has a light and dark theme to improve accessibility, readability and user experience",
+    description:
+      "TODO is a todo application built with HTML, CSS and Javascript. It allows users to view, add and delete items on a todo list. It also has a light and dark theme to improve accessibility, readability and user experience",
     repolink: "https://github.com/Dev-Elo-1505/Todo-app.git",
     livelink: "https://todo-app-eight-zeta-90.vercel.app/",
     src: todo,
   },
   {
-    id: 7,
+   
     name: "5 point CGPA Calculator",
-    description: "It helps students calculate their CGPA based on their courses, grades, and units. Built using ReactJs, Typescript, and Vanilla CSS.",
+    description:
+      "It helps students calculate their CGPA based on their courses, grades, and units. Built using ReactJs, Typescript, and Vanilla CSS.",
     repolink: "https://github.com/Dev-Elo-1505/cgpa-calculator",
     livelink: "https://cgpa-calculator-black.vercel.app/",
     src: cgpa,
