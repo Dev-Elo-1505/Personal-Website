@@ -11,13 +11,13 @@ import tailwind from "./assets/tailwind.svg";
 import firebase from "./assets/firebase.svg";
 import prisma from "./assets/prisma.svg";
 import mysql from "./assets/mysql.svg";
-import todo from "./assets/todo.png";
+// import todo from "./assets/todo.png";
 import squaay from "./assets/squaaypro.png";
 import cineo from "./assets/cineopro.png";
 import twae from "./assets/twae.png";
 import lead from "./assets/lead.png";
 import recipeep from "./assets/recipeep.png";
-import cgpa from "./assets/cgpa.png";
+// import cgpa from "./assets/cgpa.png";
 import ticklo from "./assets/ticklo.png";
 import trackit from "./assets/trackit-pic.png";
 
@@ -122,7 +122,7 @@ export const projects = [
    
     name: "trackit",
     description:
-      "trackit is a habit tracking web application that allows users to create, manage, and track their daily habits. Built with ReactJs, Typescript, TailwindCss, and Firebase for backend services.",
+      "trackit is a habit tracking web application featuring a Smart Coach for personalized insights that allows users to create, manage, and track their daily habits. Built with ReactJs, Typescript, TailwindCss, and Firebase for backend services.",
       repolink: "https://github.com/Dev-Elo-1505/trackit",
       livelink: "https://trackit-seven-neon.vercel.app/",
       src: trackit,
@@ -170,22 +170,22 @@ export const projects = [
     repolink: "https://github.com/Dev-Elo-1505/recipeep",
     src: recipeep,
   },
-  {
+  // {
   
-    name: "TODO",
-    description:
-      "TODO is a todo application built with HTML, CSS and Javascript. It allows users to view, add and delete items on a todo list. It also has a light and dark theme to improve accessibility, readability and user experience",
-    repolink: "https://github.com/Dev-Elo-1505/Todo-app.git",
-    livelink: "https://todo-app-eight-zeta-90.vercel.app/",
-    src: todo,
-  },
-  {
+  //   name: "TODO",
+  //   description:
+  //     "TODO is a todo application built with HTML, CSS and Javascript. It allows users to view, add and delete items on a todo list. It also has a light and dark theme to improve accessibility, readability and user experience",
+  //   repolink: "https://github.com/Dev-Elo-1505/Todo-app.git",
+  //   livelink: "https://todo-app-eight-zeta-90.vercel.app/",
+  //   src: todo,
+  // },
+  // {
    
-    name: "5 point CGPA Calculator",
-    description:
-      "It helps students calculate their CGPA based on their courses, grades, and units. Built using ReactJs, Typescript, and Vanilla CSS.",
-    repolink: "https://github.com/Dev-Elo-1505/cgpa-calculator",
-    livelink: "https://cgpa-calculator-black.vercel.app/",
-    src: cgpa,
-  },
+  //   name: "5 point CGPA Calculator",
+  //   description:
+  //     "It helps students calculate their CGPA based on their courses, grades, and units. Built using ReactJs, Typescript, and Vanilla CSS.",
+  //   repolink: "https://github.com/Dev-Elo-1505/cgpa-calculator",
+  //   livelink: "https://cgpa-calculator-black.vercel.app/",
+  //   src: cgpa,
+  // },
 ];

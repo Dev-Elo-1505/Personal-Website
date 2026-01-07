@@ -30,7 +30,7 @@ const Hero = () => {
         <div>
         <a href={resume} target="_blank" rel="noreferrer">
           <button className="bg-dark text-white rounded-full px-5 py-2 hover:brightness-95 active:scale-95 transition-transform duration-500">
-            Download Resume
+            View Resume
           </button>
           </a>
         </div>
