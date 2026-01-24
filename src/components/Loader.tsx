@@ -51,15 +51,15 @@ const Loader = ({ finishLoading }: { finishLoading: () => void }) => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black font-poppins"
+          className="fixed inset-0 z-[100] flex items-center justify-center grainy-bg font-poppins"
         >
           <div className="flex flex-col items-center">
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-2 sm:gap-4 mb-4">
               {words.map((word, index) => (
                 <motion.span
                   key={index}
                   variants={childVariants}
-                  className="text-white text-5xl md:text-7xl font-bold tracking-tighter"
+                  className="text-black text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter"
                 >
                   {word}
                 </motion.span>

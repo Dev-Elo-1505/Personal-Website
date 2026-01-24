@@ -20,12 +20,13 @@ import recipeep from "./assets/recipeep.png";
 // import cgpa from "./assets/cgpa.png";
 import ticklo from "./assets/ticklo.png";
 import trackit from "./assets/trackit-pic.png";
+import { LuHouse, LuUserCheck, LuPickaxe, LuMail } from "react-icons/lu";
 
 export const navData = [
-  { id: 1, name: "Home", href: "#home" },
-  { id: 2, name: "Elo", href: "#about" },
-  { id: 3, name: "Projects", href: "#project" },
-  { id: 4, name: "Contact", href: "#contact" },
+  { id: 1, label: "Home", Icon: LuHouse, href: "#home" },
+  { id: 2, label: "Elo", Icon: LuUserCheck, href: "#about" },
+  { id: 3, label: "Projects", Icon: LuPickaxe, href: "#project" },
+  { id: 4, label: "Contact", Icon: LuMail, href: "#contact" },
 ];
 
 export const socials = [
