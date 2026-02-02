@@ -6,7 +6,7 @@ const Tools = () => {
 const duplicatedStacks = [...stacks, ...stacks]
 
   return (
-    <div className="overflow-hidden  flex bg-black/5 backdrop-blur MyGradient w-full">
+    <div className="overflow-hidden flex glass-panel MyGradient w-full">
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: "-50%" }}
@@ -15,11 +15,12 @@ const duplicatedStacks = [...stacks, ...stacks]
       >
         {duplicatedStacks.map((stack) => (
           <img
-          key={stack.id}
+            key={stack.id}
             src={stack.src}
             alt={stack.name}
             width="40px"
             title={stack.name}
+            className={`${(stack.name === "Github" || stack.name === "NextJs") ? "dark:invert" : ""} transition-all duration-300`}
           />
         ))}
       </motion.div>

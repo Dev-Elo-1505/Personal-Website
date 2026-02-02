@@ -8,7 +8,7 @@ const Loader = ({ finishLoading }: { finishLoading: () => void }) => {
     setIsMounted(true);
     const timeout = setTimeout(() => {
       finishLoading();
-    }, 2500);
+    }, 3000);
     return () => clearTimeout(timeout);
   }, [finishLoading]);
 
@@ -59,7 +59,7 @@ const Loader = ({ finishLoading }: { finishLoading: () => void }) => {
                 <motion.span
                   key={index}
                   variants={childVariants}
-                  className="text-black text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter"
+                  className="text-[#37352f] dark:text-[#d3d3d3] text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter"
                 >
                   {word}
                 </motion.span>

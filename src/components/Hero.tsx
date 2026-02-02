@@ -10,7 +10,7 @@ const Hero = () => {
       id="home"
     >
       <div className="flex flex-col gap-3 justify-center">
-        <div className="w-fit bg-teal-100  rounded-full px-2 py-1 text-teal-500 font-semibold tracking-wide mb-3 flex items-center gap-2">
+        <div className="w-fit bg-teal-100 dark:bg-teal-900/30 rounded-full px-2 py-1 text-teal-500 dark:text-teal-400 font-semibold tracking-wide mb-3 flex items-center gap-2 transition-colors duration-300">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span>
@@ -18,18 +18,18 @@ const Hero = () => {
           <p className="text-[10px] ">AVAILABLE FOR WORK</p>
         </div>
         <div>
-          <h1 className="text-3xl font-bold mb-5 md:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-bold mb-5 md:text-4xl lg:text-5xl text-[#37352f] dark:text-[#d3d3d3] transition-colors duration-300">
             <span>Hi, I'm Elo-oghene </span>
             <br />
             <span>Frontend Engineer</span>
           </h1>
-          <p className="text-sm text-gray-400 mb-5">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">
             I build functional UIs and problem solving softwares that people need.
           </p>
         </div>
         <div>
         <a href={resume} target="_blank" rel="noreferrer">
-          <button className="bg-dark text-white rounded-full px-5 py-2 hover:brightness-95 active:scale-95 transition-transform duration-500">
+          <button className="bg-[#37352f] dark:bg-[#d3d3d3] text-white dark:text-[#191919] rounded-full px-6 py-2.5 hover:opacity-90 active:scale-95 transition-all duration-300 shadow-sm font-medium">
             View Resume
           </button>
           </a>

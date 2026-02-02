@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Tools from "./components/Tools";
 import Loader from "./components/Loader";
 import Layout from "./components/Layout";
+import { ThemeProvider } from "./components/ThemeContext";
 import "./index.css";
 
 
@@ -15,7 +16,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <>
+    <ThemeProvider>
       {isLoading ? (
         <Loader finishLoading={() => setIsLoading(false)} />
       ) : (
@@ -29,7 +30,7 @@ function App() {
           <Footer />
         </Layout>
       )}
-    </>
+    </ThemeProvider>
   );
 }
 
